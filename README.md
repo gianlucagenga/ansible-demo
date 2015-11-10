@@ -33,8 +33,9 @@ Use Vagrant to create a new VM, provisioned with Apache
     
     * `./ansible_uptime.sh`: check server uptime through ansible ad-hoc commands
 
-## Demo1 (vagrant-ansible folder)
+## Demo2 (vagrant-ansible folder)
 Use Vagrant and Ansible playbook to create a new VM provisioned with Nginx
+
     * `vagrant up`
     * check nginx is listening on http://192.168.1.200/ (IP address may vary based on your network configuration)
         
