@@ -1,6 +1,5 @@
 # ansible-demo
 1 -
-
     cd vagrant
     vagrant up
     http://192.168.1.199/
@@ -12,3 +11,8 @@
     ?>
     rimuovere index.html
     http://192.168.1.199/
+    
+    ./ansible_uptime.sh
+2 - 
+    cd vagrant-ansible
+    vagrant up

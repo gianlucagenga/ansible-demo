@@ -1,0 +1,19 @@
+---
+- name: Install and configure nginx
+  hosts: ansibleHost
+  sudo: true
+  remote_user: vagrant
+
+  tasks:
+  - name: NGINX | Updating apt cache
+    apt:
+       update_cache: yes
+
+  - name: NGINX | Installing NGINX
+    apt:
+      pkg: nginx
+      state: latest
+
+  handlers:
+  - name: start nginx
+    service: name=nginx state=started
