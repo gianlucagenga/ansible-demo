@@ -12,7 +12,7 @@ Install Ansible for your system: http://www.ansible.com/
 
 ## Start Vagrant Machine
 
-* git clone https://github.com/gianlucagenga/ansible-demo.git`
+* git clone https://github.com/gianlucagenga/ansible-demo.git
 * Start the virtual machine by using `vagrant up` command (from the demo folder)
 * SSH into the VM: `vagrant ssh`
 
@@ -25,9 +25,9 @@ Use Vagrant to create a new VM, provisioned with Apache
     * `vagrant ssh`: enter into the guest OS
     * `cd /var/www; touch index.php; exit`
     * on the shared local folder (app/) you will see now a index.php, modify it with the following snippet:
-      ```<?php
-            phpinfo();
-      ``` ?>
+      <?php
+         phpinfo();
+       ?>
     * remove index.html from app/ folder
     * check http://192.168.1.199/
     
