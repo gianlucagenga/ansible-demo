@@ -1,0 +1,4 @@
+.idea/
+vagrant/.vagrant/
+vagrant/app/
+vagrant-ansible/.vagrant/
