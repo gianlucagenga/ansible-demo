@@ -2,3 +2,4 @@
 vagrant/.vagrant/
 vagrant/app/
 vagrant-ansible/.vagrant/
+vagrant-ansible/app
