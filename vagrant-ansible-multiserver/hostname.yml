@@ -1,0 +1,8 @@
+---
+- hosts: ubuntu2511_02 # cloud-01
+  sudo: true
+
+  tasks:
+   # set hostname
+   - name: get hostname
+     shell: hostname

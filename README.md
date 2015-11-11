@@ -38,4 +38,16 @@ Use Vagrant and Ansible playbook to create a new VM provisioned with Nginx
 
     * `vagrant up`
     * check nginx is listening on http://192.168.1.200/ (IP address may vary based on your network configuration)
-        
+
+## Demo3 (vagrant-ansible-multiserver folder)
+Use Vagrant and Ansible playbook to startup different servers
+
+    * `vagrant up`
+    * `./hostname.sh`: prints hostname of the server n.2
+    * `./info.sh`: prints hostname, files list, os release and ifconfig on both servers
+    * `./apt_update.sh`: performs apt-get update and apt-get upgrade on both servers
+
+## Demo4 (vagrant-ansible-multienv folder)
+Use Vagrant and Ansible playbook to startup different environments
+    
+    * work in progress...

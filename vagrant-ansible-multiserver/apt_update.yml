@@ -1,0 +1,11 @@
+---
+- hosts: cloud-01 #ubuntu2511_01 #ubuntu2511_02
+  sudo: true
+  tasks:
+   # Run the equivalent of "apt-get update" as a separate step
+   - name: updates a server
+     apt: update_cache=yes
+
+   # Run the equivalent of "apt-get upgrade" as a separate step
+   - name: upgrade a server
+     apt: upgrade=full
