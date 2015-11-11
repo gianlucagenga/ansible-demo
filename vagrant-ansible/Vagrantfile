@@ -1,17 +1,11 @@
 #Vagrant file with ansible provision
 Vagrant.configure(2) do |config|
-  config.vm.define :ansibleHost do |ubuntu|
-      ubuntu.vm.box="precise32"
-      ubuntu.vm.box_url = "http://files.vagrantup.com/precise32.box"
-      ubuntu.vm.synced_folder "./app", "/var/www/", create:true
-      ubuntu.vm.network :public_network, :bridge => "en0: Wi-Fi (AirPort)", ip: "192.168.1.200" # FIXED IP
-  end
+  config.vm.box="precise32"
+  config.vm.box_url = "http://files.vagrantup.com/precise32.box"
+  config.vm.synced_folder "./app", "/var/www/", create:true
+  config.vm.network :public_network, :bridge => "en0: Wi-Fi (AirPort)", ip: "192.168.1.200" # FIXED IP
 
   config.vm.provision :ansible do |ansible|
     ansible.playbook = "site.yml"
-  # ansible.verbose = 'vvvv'
-    ansible.groups = {
-        "dev" => ["ansibleHost"]
-    }
   end
 end

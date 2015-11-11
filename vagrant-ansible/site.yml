@@ -1,6 +1,6 @@
 ---
 - name: Install and configure nginx
-  hosts: ansibleHost
+  hosts: all
   sudo: true
   remote_user: vagrant
 
