@@ -1,5 +1,9 @@
 .idea/
+*.DS_Store
 vagrant/.vagrant/
 vagrant/app/
+vagrant/ansible_ec2.txt
+vagrant/ec2.ini
+vagrant/ec2.py
 vagrant-ansible/.vagrant/
 vagrant-ansible/app

@@ -1,1 +1,1 @@
-192.168.1.199
+192.168.1.199 ansible_ssh_user=vagrant
