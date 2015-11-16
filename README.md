@@ -17,7 +17,7 @@ Install Ansible for your system: http://www.ansible.com/
 * SSH into the VM: `vagrant ssh`
 
 # List of demos
-## Demo1 (vagrant folder)
+## Demo1 (vagrant-ansiblecommands folder)
 Use Vagrant to create a new VM, provisioned with Apache
     
     * `vagrant up`
@@ -33,13 +33,13 @@ Use Vagrant to create a new VM, provisioned with Apache
     
     * `./ansible_uptime.sh`: check server uptime through ansible ad-hoc commands
 
-## Demo2 (vagrant-ansible folder)
+## Demo2 (vagrant-ansibleplaybook folder)
 Use Vagrant and Ansible playbook to create a new VM provisioned with Nginx
 
     * `vagrant up`
     * check nginx is listening on http://192.168.1.200/ (IP address may vary based on your network configuration)
 
-## Demo3 (vagrant-ansible-multiserver folder)
+## Demo3 (vagrant-ansiblemultiserver folder)
 Use Vagrant and Ansible playbook to startup different servers
 
     * `vagrant up`
@@ -47,7 +47,7 @@ Use Vagrant and Ansible playbook to startup different servers
     * `./info.sh`: prints hostname, files list, os release and ifconfig on both servers
     * `./apt_update.sh`: performs apt-get update and apt-get upgrade on both servers
 
-## Demo4 (vagrant-ansible-multienv folder)
+## Demo4 (vagrant-ansiblehadoop folder)
 Use Vagrant and Ansible playbook to startup different environments
     
     * work in progress...

@@ -1,0 +1,1 @@
+{"virtualbox":{"/var/www":{"create":true,"guestpath":"/var/www","hostpath":"/Users/gianlucagenga/mondora/corsoAnsible/ansible-demo/vagrant/app","disabled":false},"/vagrant":{"guestpath":"/vagrant","hostpath":"/Users/gianlucagenga/mondora/corsoAnsible/ansible-demo/vagrant","disabled":false}}}
