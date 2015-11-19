@@ -1,0 +1,40 @@
+---
+- name: Install and configure nginx
+  hosts: all
+  sudo: true
+  remote_user: vagrant
+
+## NGINX PROVISIONING
+#  tasks:
+#  - name: NGINX | Updating apt cache
+#    apt:
+#      update_cache: yes
+
+#  - name: NGINX | Installing NGINX
+#    apt:
+#      pkg: nginx
+#      state: latest
+#    notify:
+#      - restart nginx
+
+#  handlers:
+#  - name: restart nginx
+#    service: name=nginx state=restarted
+#    sudo: yes
+## NGINX PROVISIONING
+
+## APACHE PROVISIONING (in contrast to nginx)
+  tasks:
+    - name: install apache2
+      apt: name=apache2 update_cache=yes state=latest
+
+    - name: enabled mod_rewrite
+      apache2_module: name=rewrite state=present
+      notify:
+        - restart apache2
+
+  handlers:
+    - name: restart apache2
+      service: name=apache2 state=restarted
+      sudo: yes
+## APACHE PROVISIONING

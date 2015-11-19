@@ -37,7 +37,7 @@ Use Vagrant to create a new VM, provisioned with Apache
 Use Vagrant and Ansible playbook to create a new VM provisioned with Nginx
 
     * `vagrant up`
-    * check nginx is listening on http://192.168.1.200/ (IP address may vary based on your network configuration)
+    * check nginx is listening on http://localhost:8080
 
 ## Demo3 (vagrant-ansiblemultiserver folder)
 Use Vagrant and Ansible playbook to startup different servers
