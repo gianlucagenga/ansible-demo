@@ -33,11 +33,12 @@ Use Vagrant to create a new VM, provisioned with Apache
     
     * `./ansible_uptime.sh`: check server uptime through ansible ad-hoc commands
 
-## Demo2 (vagrant-ansibleplaybook folder)
-Use Vagrant and Ansible playbook to create a new VM provisioned with Nginx
+## Demo2 (2-ansibleplaybook folder)
+Use Vagrant and Ansible playbook to create a new VM provisioned with Nginx, and create users
 
     * `vagrant up`
     * check nginx is listening on http://localhost:8080
+    * check users are created: `vagrant ssh` -> `cat /etc/passwd`
 
 ## Demo3 (vagrant-ansiblemultiserver folder)
 Use Vagrant and Ansible playbook to startup different servers
