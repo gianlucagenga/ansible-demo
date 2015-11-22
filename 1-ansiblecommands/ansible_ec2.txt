@@ -1,4 +1,0 @@
-ssh-add "<EC2-private-key-path>"
-
-ansible all -i ec2.py -u ec2-user -m setup
-ansible all -i ec2.py -u ec2-user -m yum -a "name=mysql-server state=present" -s
