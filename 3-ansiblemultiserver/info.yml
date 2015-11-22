@@ -1,0 +1,37 @@
+---
+- name: Setup Hostname and update servers, print infos
+  hosts: cloud-01
+  sudo: true
+  remote_user: vagrant
+
+  tasks:
+    - name: set hostname
+      shell: hostnamectl set-hostname "ansible-{{ inventory_hostname }}"
+
+    # Run the equivalent of "apt-get update" as a separate step
+    - name: updates a server
+      apt: update_cache=yes
+
+    - name: get host name
+      shell: hostname
+      register: ps
+    - name: Print hostname
+      debug: var=ps.stdout_lines
+
+    - name: list file
+      shell: ls -al
+      register: ps
+    - name: Print List File
+      debug: var=ps.stdout_lines
+
+    - name: os release
+      shell: cat /etc/os-release
+      register: ps
+    - name: Print OS Release
+      debug: var=ps.stdout_lines
+
+    - name: ifconfig
+      shell: ifconfig
+      register: ps
+    - name: Print Network configuration
+      debug: var=ps.stdout_lines
