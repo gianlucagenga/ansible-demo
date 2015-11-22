@@ -44,8 +44,10 @@ Use Vagrant and Ansible playbook to create a new VM provisioned with Nginx, and 
 Use Vagrant and Ansible playbook to startup different servers
 
     * `vagrant up`
+    
+    Aternatively, you can run playbooks separately
     * `./hostname.sh`: prints hostname of the server n.2
-    * `./info.sh`: prints hostname, files list, os release and ifconfig on both servers
+    * `./info.sh`: sets hostname, updates servers, prints hostname, files list, os release and ifconfig on both servers
     * `./apt_update.sh`: performs apt-get update and apt-get upgrade on both servers
 
 ## Demo4 (vagrant-ansiblehadoop folder)
