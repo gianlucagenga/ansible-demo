@@ -17,7 +17,7 @@ Install Ansible for your system: http://www.ansible.com/
 * SSH into the VM: `vagrant ssh`
 
 # List of demos
-## Demo1 (vagrant-ansiblecommands folder)
+## Demo1 (1-ansiblecommands folder)
 Use Vagrant to create a new VM, provisioned with Apache
     
     * `vagrant up`

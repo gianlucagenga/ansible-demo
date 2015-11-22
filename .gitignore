@@ -1,11 +1,12 @@
 .idea/
 *.DS_Store
-vagrant-ansiblecommands/.vagrant/
-vagrant-ansiblecommands/app/
-vagrant-ansiblecommands/ansible_ec2.txt
-vagrant-ansiblecommands/ec2.ini
-vagrant-ansiblecommands/ec2.py
+1-ansiblecommands/.vagrant/
+1-ansiblecommands/app/
+1-ansiblecommands/ansible_ec2.txt
+1-ansiblecommands/ec2.ini
+1-ansiblecommands/ec2.py
 vagrant-ansibleplaybook/.vagrant/
 vagrant-ansibleplaybook/app/
+vagrant-ansible-docker/
 vagrant-ansible-docker/.vagrant/
 vagrant-tower/.vagrant/
