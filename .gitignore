@@ -7,3 +7,5 @@ vagrant-ansiblecommands/ec2.ini
 vagrant-ansiblecommands/ec2.py
 vagrant-ansibleplaybook/.vagrant/
 vagrant-ansibleplaybook/app/
+vagrant-ansible-docker/.vagrant/
+vagrant-tower/.vagrant/
