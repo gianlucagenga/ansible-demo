@@ -40,7 +40,7 @@ Use Vagrant and Ansible playbook to create a new VM provisioned with Nginx, and 
     * check nginx is listening on http://localhost:8080
     * check users are created: `vagrant ssh` -> `cat /etc/passwd`
 
-## Demo3 (vagrant-ansiblemultiserver folder)
+## Demo3 (3-ansiblemultiserver folder)
 Use Vagrant and Ansible playbook to startup different servers
 
     * `vagrant up`
